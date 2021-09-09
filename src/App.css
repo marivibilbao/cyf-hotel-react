@@ -27,6 +27,16 @@
   font-size: large;
 }
 
+/*Lesson 1:*/
+.card-title {
+  text-align: center;
+}
+
+.card-paragraph {
+  font-size: 12px;
+  text-align: justify;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
