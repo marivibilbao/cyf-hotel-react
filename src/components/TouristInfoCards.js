@@ -3,8 +3,8 @@ import React from "react";
 
 const TouristInfoCards = () => {
   return (
-    <div className="d-flex m-3 justify-content-center">
-      <div className="card">
+    <div className="container d-flex m-3 justify-content-center">
+      <div className="card p-2">
         <img
           src="https://viajarporescocia.com/contenido/uploads/foto_principal-19.jpg"
           className="card-img-top"
@@ -23,7 +23,7 @@ const TouristInfoCards = () => {
           </a>
         </div>
       </div>
-      <div className="card">
+      <div className="card p-2">
         <img
           src="https://st2.depositphotos.com/3197629/6753/i/600/depositphotos_67533247-stock-photo-castlefield-manchester-uk.jpg"
           className="card-img-top"
@@ -41,7 +41,7 @@ const TouristInfoCards = () => {
           </a>
         </div>
       </div>
-      <div className="card">
+      <div className="card p-2">
         <img
           src="https://images.musement.com/cover/0002/49/big-ben-westminster-bridge-on-river-thames-in-london-jpg_header-148518.jpeg?w=1200&h=630&q=95&fit=crop"
           className="card-img-top"

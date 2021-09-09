@@ -32,9 +32,19 @@
   text-align: center;
 }
 
+.card-img-top {
+  width: auto;
+  height: auto;
+}
+
 .card-paragraph {
   font-size: 12px;
   text-align: justify;
+}
+
+.btn btn-primary {
+  align-content: center;
+  align-items: center;
 }
 
 @keyframes App-logo-spin {
