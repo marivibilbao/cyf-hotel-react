@@ -1,7 +1,8 @@
 //Lesson 1:
 import React from "react";
 
-const SearchResults = () => {
+const SearchResults = props => {
+  //console.log(props)
   return (
     <div className="table-bookings container d-flex">
       <table className="table">
@@ -18,36 +19,22 @@ const SearchResults = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>@fat</td>
-            <td>@fat</td>
-            <td>@fat</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-          </tr>
+          {props.results &&
+            props.results.map((item, index) => {
+              console.log(item);
+              return (
+                <tr key={index}>
+                  <td>{item.id}</td>
+                  <td>{item.title}</td>
+                  <td>{item.firstName}</td>
+                  <td>{item.surname}</td>
+                  <td>{item.email}</td>
+                  <td>{item.roomId}</td>
+                  <td>{item.checkInDate}</td>
+                  <td>{item.checkOutDate}</td>
+                </tr>
+              );
+            })}
         </tbody>
       </table>
     </div>
