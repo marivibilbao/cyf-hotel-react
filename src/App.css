@@ -27,7 +27,7 @@
   font-size: large;
 }
 
-/*Lesson 1:*/
+/*Lesson 1: Agrego estilos */
 .card-title {
   text-align: center;
 }
@@ -73,6 +73,7 @@ tr {
 
 .footer {
   padding-top: 20px;
+  /* Agrego estilos */
   text-align: center;
   font-size: 13px;
   list-style: none;
