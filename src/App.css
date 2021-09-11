@@ -47,6 +47,10 @@
   align-items: center;
 }
 
+.table-bookings {
+  font-size: 13px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -70,6 +74,7 @@ tr {
 .footer {
   padding-top: 20px;
   text-align: center;
+  font-size: 13px;
 }
 
 .card {

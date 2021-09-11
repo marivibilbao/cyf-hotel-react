@@ -6,7 +6,7 @@ const Footer = props => {
   const { data } = props;
   return (
     <div>
-      <ul>
+      <ul className="footer">
         {data.map((information, i) => (
           <li key={i}>{information}</li>
         ))}

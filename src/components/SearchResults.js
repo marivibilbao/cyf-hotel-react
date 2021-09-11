@@ -3,7 +3,7 @@ import React from "react";
 
 const SearchResults = () => {
   return (
-    <div className="container d-flex">
+    <div className="table-bookings container d-flex">
       <table className="table">
         <thead>
           <tr>
