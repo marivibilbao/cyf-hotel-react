@@ -75,6 +75,7 @@ tr {
   padding-top: 20px;
   text-align: center;
   font-size: 13px;
+  list-style: none;
 }
 
 .card {
