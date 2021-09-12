@@ -3,14 +3,16 @@ import Heading from "./components/Heading";
 import Bookings from "./components/Bookings";
 import Footer from "./components/Footer";
 import TouristInfoCards from "./components/TouristInfoCards";
-import SearchResults from "./components/SearchResults";
+/*import SearchResults from "./components/SearchResults";*/
 import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
       <Heading />
-      <TouristInfoCards />
+      <div className="container d-flex m-3 justify-content-center">
+        <TouristInfoCards />
+      </div>
       <Bookings />
       {/*<SearchResults />*/}
       <Footer
