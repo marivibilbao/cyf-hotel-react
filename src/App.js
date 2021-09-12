@@ -12,7 +12,7 @@ const App = () => {
       <Heading />
       <TouristInfoCards />
       <Bookings />
-      <SearchResults />
+      {/*<SearchResults />*/}
       <Footer
         data={[
           "123 Fake Street, London, E1 4UD",
