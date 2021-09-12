@@ -24,7 +24,7 @@ const cities = [
     image:
       "https://images.musement.com/cover/0002/49/big-ben-westminster-bridge-on-river-thames-in-london-jpg_header-148518.jpeg?w=1200&h=630&q=95&fit=crop",
     content:
-      "Es la capital y mayor ciudad de Inglaterra y del Reino Unido.​ Situada a orillas del río Támesis, Londres es un importante asentamiento humano desde que fue fundada por los romanos con el nombre de Londinium hace casi dos milenios.",
+      "Es la capital y mayor ciudad de Inglaterra y del Reino Unido.​ Situada a orillas del río Támesis, Londres es un importante asentamiento humano desde que fue fundada por los romanos con el nombre de Londinium hace casi dos milenios. En esta ciudad multirracial convive gente de un gran número de culturas que hablan más de trescientos idiomas distintos.",
     url: "https://visitlondon.com/"
   }
 ];

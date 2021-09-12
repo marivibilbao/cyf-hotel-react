@@ -25,7 +25,7 @@ const SearchResults = props => {
           {props.results.map((item, index) => {
             const checkOut = moment(item.checkOutDate, "YYYY-MM-DD");
             const checkIn = moment(item.checkInDate, "YYYY-MM-DD");
-            console.log(item);
+            //console.log(item);
             return (
               <tr key={index}>
                 <td>{item.id}</td>
