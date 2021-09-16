@@ -7,7 +7,7 @@ const Restaurant = () => {
   return (
     <div>
       <h3 className="d-flex justify-content-center">Restaurant Orders</h3>
-      <ul>
+      <ul className="search-wrapper">
         <Order orderType="Pizzas" />
         <Order orderType="Salads" />
         <Order orderType="Chocolate cake" />
