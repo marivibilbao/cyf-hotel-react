@@ -25,9 +25,11 @@ const SearchResults = props => {
           {props.results.map((item, index) => {
             const checkOut = moment(item.checkOutDate, "YYYY-MM-DD");
             const checkIn = moment(item.checkInDate, "YYYY-MM-DD");
+
+            const changeBackgroundColor = () => {};
             //console.log(item);
             return (
-              <tr key={index}>
+              <tr key={index} onClick={changeBackgroundColor}>
                 <td>{item.id}</td>
                 <td>{item.title}</td>
                 <td>{item.firstName}</td>
