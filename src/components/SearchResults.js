@@ -1,9 +1,17 @@
 //Lesson 1:
-import React from "react";
+import React, { useState } from "react";
 import moment from "moment";
 moment().format();
 
 const SearchResults = props => {
+  const [backGround, setBackGround] = useState("bg-transparent");
+
+  const changeBackGround = () => {
+    backGround === "bg-transparent"
+      ? setBackGround("selectedRow")
+      : setBackGround("bg-transparent");
+  };
+
   //console.log(props)
   return (
     <div className="table-bookings container d-flex">
@@ -26,10 +34,9 @@ const SearchResults = props => {
             const checkOut = moment(item.checkOutDate, "YYYY-MM-DD");
             const checkIn = moment(item.checkInDate, "YYYY-MM-DD");
 
-            const changeBackgroundColor = () => {};
             //console.log(item);
             return (
-              <tr key={index} onClick={changeBackgroundColor}>
+              <tr className={backGround} key={index} onClick={changeBackGround}>
                 <td>{item.id}</td>
                 <td>{item.title}</td>
                 <td>{item.firstName}</td>
