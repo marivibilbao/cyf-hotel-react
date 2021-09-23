@@ -6,7 +6,7 @@ import SearchResults from "./SearchResults.js";
 
 const Bookings = () => {
   //const [bookings, setBookings] = useState(FakeBookings);
-  const [bookings, setBookings] = useState([]);
+  const [bookings, setBookings] = useState();
   useEffect(() => {
     fetch(`https://cyf-react.glitch.me`)
       .then(res => res.json())
@@ -31,7 +31,7 @@ const Bookings = () => {
     <div className="App-content">
       <div className="container">
         <Search search={search} />
-        <SearchResults results={bookings} />
+        {bookings ? <SearchResults results={bookings} /> : <h1>Loading...</h1>}
       </div>
     </div>
   );

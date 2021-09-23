@@ -1,6 +1,7 @@
 //Lesson 1:
 import React, { useState } from "react";
 import moment from "moment";
+import CustomerProfile from "./CustomerProfile";
 moment().format();
 
 const SearchResults = props => {
@@ -27,6 +28,7 @@ const SearchResults = props => {
             <th scope="col">Check in date</th>
             <th scope="col">Check out date</th>
             <th scope="col">Nights</th>
+            <th scope="col">Profile</th>
           </tr>
         </thead>
         <tbody>
@@ -46,11 +48,15 @@ const SearchResults = props => {
                 <td>{item.checkInDate}</td>
                 <td>{item.checkOutDate}</td>
                 <td>{checkOut.diff(checkIn, "days")}</td>
+                <td>
+                  <button className="btn btn-primary">Show profile</button>
+                </td>
               </tr>
             );
           })}
         </tbody>
       </table>
+      <CustomerProfile />
     </div>
   );
 };
