@@ -12,10 +12,10 @@ export default function CustomerProfile({ profile }) {
 
   return (
     <div>
-      <h1 className="d-flex justify-content-center">
+      <h3 className="d-flex justify-content-center">
         Customer {customerProfile.id} profile
-      </h1>
-      <ul>
+      </h3>
+      <ul class="search-wrapper">
         <li className="d-flex justify-content-center">
           <b>ID:</b> {customerProfile.id}
         </li>
